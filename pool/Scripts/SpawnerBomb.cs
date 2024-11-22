@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class SpawnerBomb : MonoBehaviour
 {
-    [SerializeField] private Pooler _pooler;
+    [SerializeField] private Pooler _poolerBrick;
+    [SerializeField] private Pooler _poolerBomb;
 
     private void Update()
     {
@@ -12,17 +13,17 @@ public class SpawnerBomb : MonoBehaviour
 
     private void OnEnable()
     {
-        _pooler.ReleasedNotBomb += Spawn;
+        _poolerBrick.ReleasedNotBomb += Spawn;
     }
 
     private void OnDisable()
     {
-        _pooler.ReleasedNotBomb -= Spawn;
+        _poolerBrick.ReleasedNotBomb -= Spawn;
     }
 
     protected void Spawn(Vector3 position)
     {
-        Shape shape = _pooler.Get(transform);
+        Shape shape = _poolerBomb.Get(transform);
 
         if (shape != null)
             shape.transform.position = position;

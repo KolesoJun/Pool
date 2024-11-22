@@ -840,7 +840,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da9b73ac43151cf47a323b9622954672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pooler: {fileID: 411383377}
+  _poolerBrick: {fileID: 1220028039}
+  _poolerBomb: {fileID: 411383377}
 --- !u!4 &411383376
 Transform:
   m_ObjectHideFlags: 0
@@ -869,7 +870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefab: {fileID: 2807427445419523788, guid: c92d737e15de5c84d92118fcb8e7b96f, type: 3}
-  _countObjects: 100
+  _countObjects: 10
 --- !u!1 &433063410
 GameObject:
   m_ObjectHideFlags: 0

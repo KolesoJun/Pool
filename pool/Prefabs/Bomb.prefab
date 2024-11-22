@@ -147,5 +147,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MeshRenderer: {fileID: 2246240181746918173}
-  _force: 200
-  _radius: 10
+  _force: 500
+  _radius: 100
